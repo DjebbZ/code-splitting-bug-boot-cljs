@@ -23,7 +23,10 @@
   []
   (comp (speak)
 
-        (cljs)
+        (cljs :compiler-options {:asset-path "js/app.out"
+                                 :libs ["tracker1/script.js"]
+                                 :modules {:track {:entries #{'code-splitting-bug-boot-cljs.tracking}}
+                                           :cljs-base {:output-to "js/app.js"}}})
         ))
 
 (deftask run

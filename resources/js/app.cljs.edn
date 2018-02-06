@@ -1,6 +1,0 @@
-{:require  [code-splitting-bug-boot-cljs.app]
- :init-fns [code-splitting-bug-boot-cljs.app/init]
- :compiler-options {:asset-path "js/app.out"
-                    :libs ["tracker1/script.js"]
-                    :modules {:track {:entries #{code-splitting-bug-boot-cljs.tracking}}
-                              :cljs-base {:output-to "js/app.js"}}}}

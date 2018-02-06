@@ -4,7 +4,7 @@
 ;; base module should do this as well
 (loader/set-loaded! :cljs-base)
 
-(defn init []
+(defn ^:export init []
   (js/console.log "Init loaded")
   ;; loading other modules should be done ONLY after set-loaded! in the current
   ;; module
